@@ -18,4 +18,4 @@ install:
 script:
   - pep8 $(grep ^PEP8_OPTIONS configuration.mk | cut --delimiter=' ' --fields=3-) .
   - coverage run setup.py test
-  - coverage report --include='python_skeleton/*' --fail-under=100
+  - coverage report --include='vcard2gpx/*' --fail-under=100
